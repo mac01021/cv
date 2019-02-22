@@ -43,22 +43,22 @@
 \familyname{Coolbeth} % Your last name
 
 % All information in this block is optional, comment out any lines you don't need
-\title{Software Engineer and  Computer Scientist}
-\address{118 Courtyard Lane}{Storrs Mansfield, CT 06268}
+%\title{Software Engineer and  Computer Scientist}
+\address{2746 Hebron Ave}{Glastonbury, CT 06033}
 
-\phone{(860) 264 6222}
+\phone{(860) 420 2024}
 \email{coolbeth@gmail.com}
 
 % The first argument is the url for the clickable link, the second argument is the 
 % url displayed in the template - this allows special characters to be displayed such
 % as the tilde in this example
 %\homepageone{staff.org.edu/~jsmith}{staff.org.edu/$\sim$jsmith} 
-\homepageone{https://www.linkedin.com/in/mac01021}
-			{https://www.linkedin.com/in/mac01021} 
-\homepagetwo{https://github.com/mac01021}
+%\homepagetwo{https://www.linkedin.com/in/mac01021}
+%			{https://www.linkedin.com/in/mac01021} 
+\homepageone{https://github.com/mac01021}
 			{https://github.com/mac01021}
-\homepagethree{https://play.google.com/store/apps/developer?id=mac01021}	 
-			  {https://play.google.com/store/apps/developer?id=mac01021} 
+%\homepagethree{https://play.google.com/store/apps/developer?id=mac01021}	 
+%			  {https://play.google.com/store/apps/developer?id=mac01021} 
 
 
 %\homepagefour{staff.org.edu/~jsmith}{staff.org.edu/$\sim$jsmith} 
@@ -81,24 +81,24 @@
 
 % To remove the cover letter, comment out this entire block
 
-\clearpage
-
-%\recipient{HR Departmnet}{Corporation\\123 Pleasant Lane\\12345 City, State} % Letter recipient
-\recipient{~}{~}
-\date{\today} % Letter date
-\opening{To whom this may concern,} % Opening greeting
-\closing{Sincerely,} % Closing phrase
-\enclosure[Attached]{r\'{e}sum\'{e}{}} % List of enclosed documents
-
-\makelettertitle % Print letter title
-
-\lipsum[1-3] % Dummy text
-
-
-\makeletterclosing % Print letter signature
-
-
-\newpage
+%\clearpage
+%
+%%\recipient{HR Departmnet}{Corporation\\123 Pleasant Lane\\12345 City, State} % Letter recipient
+%\recipient{~}{~}
+%\date{\today} % Letter date
+%\opening{To whom this may concern,} % Opening greeting
+%\closing{Sincerely,} % Closing phrase
+%\enclosure[Attached]{r\'{e}sum\'{e}{}} % List of enclosed documents
+%
+%\makelettertitle % Print letter title
+%
+%\lipsum[1-3] % Dummy text
+%
+%
+%\makeletterclosing % Print letter signature
+%
+%
+%\newpage
 %----------------------------------------------------------------------------------------
 %	CV
 %--------------------------------------------------------------------------------------
@@ -108,29 +108,52 @@
 \vspace{-1.5cm}
 \section{Professional Experience}
 
+\cventry{Feb 2017 - Present}{Data Engineer}{\textsc{HYP3R}}{}{}{
+    \begin{itemize}
+        \item Designed, built, and maintained mission critical "Ingestion Engine"
+            providing the company's core product with realtime social media content
+            from millions of feeds.
+        \item Prototyped and shipped machine learning system to determine what social
+            media posts originate from a venue of interest.
+        \item Codesigned storage tier and REST API backing the company's new flagship
+            application, serving queries over a dataset of billions of posts.
+        \item Used AWS, Docker, Kinesis, Avro, Java, Scala, Akka, PostgreSQL, Cassandra, Spark, Elasticsearch, DynamoDB,
+            Golang, Clojure
+    \end{itemize}
+}
 
-\cventry{Aug 2010 -- Present}{Applications Developer}{\textsc{University of Connecticut}}{Storrs, CT}{}{
-	I serve on an agile software development team building custom enterprise software for university
-	staff.  There are about 5 of us.  We follow a SCRUM-style methodology with two-week sprints.
-	We have a branch-based (SVN) development process incorporating continual code review, and do 
-	extensive automated testing.
-	~\\
-	The majority of our products are web applications, built using Python MVC frameworks, hosted on
-	Linux, and using MS SQL Server as a backing data store.
+\cventry{Feb 2015 - Feb 2017}{Software Engineer}{\textsc{ESPN}}{}{}{
+    \begin{itemize}
+        \item Architected and implemented core components of infrastructure to ingest
+            realtime updates from sporting events, delivering the latest game information to the TV
+            studio as well as to the espn.com website.
+        \item Built, maintained, and troubleshot pipelines of microservices communicating via messages
+            over Apache Kafka.
+        \item Implemented functionality equivalent to Kafka's consumer groups using Apache Zookeeper.
+        \item Used Zookeeper, Kafka, Avro, AWS, Java, Maven, Golang, Clojure
+    \end{itemize}
+}
+
+\cventry{Aug 2010 -- Feb 2015}{Applications Developer}{\textsc{University of Connecticut}}{}{}{
+    \begin{itemize}
+        \item Built enterprise web applications using Python MVC frameworks
+        \item Extensive automated testing - code coverage around 98\%
+        \item Used Python, MS SQL Server, SQLAlchemy, Pylons, Pyramid
+    \end{itemize}
 }
 
 
-\cventry{Jan 2010 -- Aug 2010}{Software Developer}{\textsc{QueBIT Consulting, LLC}}{Wilton, CT}{}{
+\cventry{Jan 2010 -- Aug 2010}{Software Developer}{\textsc{QueBIT Consulting, LLC}}{}{}{
 	\begin{itemize}
-		\item Helped to prototype a web application for double-entry book keeping based on the
+		\item Prototyped a web application for double-entry book keeping based on the
 			IBM COGNOS TM1 database system.
-		\item Worked on Excel plugin to populate a journal template in an excel spreadsheet from TM1.
+		\item Built Excel plugin to populate a journal template in an excel spreadsheet from TM1.
 		\item These products later evolved into QueBIT's "ControlWORQ" product.
-		\item Used C\#, ASP.NET, SOAP, MySQL, TM1, VBA, APIs for MS Excel.
+		\item Used C\#, ASP.NET, SOAP, MySQL, TM1, VBA, .NET APIs for MS Excel.
 	\end{itemize}
 }
 
-\cventry{Sep 2009 -- Dec 2009}{Software Developer (Contractor) }{\textsc{Pfizer, Inc}}{Groton, CT}{}{
+\cventry{Sep 2009 -- Dec 2009}{Software Developer (Contractor) }{\textsc{Pfizer, Inc}}{}{}{
 	Developed a Java EE web application to process sets of nucleotide sequences for research biologists.
 	\begin{itemize}
 		\item Collaborated with genomics researchers to develop and refine application requirements.
@@ -141,19 +164,19 @@
 	\end{itemize}
 }
 
-\cventry{Jan 2008 -- Aug 2009}{Research Specialist}{\textsc{University of Connecticut}}{Storrs, CT}{}{
+\cventry{Jan 2008 -- Aug 2009}{Research Specialist}{\textsc{University of Connecticut}}{}{}{
 	Worked in an interdepartmental research group to build two energy-demand-forecasting
 			systems for ISO New England.
 	\begin{itemize}
-		\item Helped to prototype forecasting methods incorporating signal processing and
+		\item Prototyped forecasting methods incorporating signal processing and
 			machine learning techniques (wavelet decomposition \& neural networks).
 		\item Primary Java developer for two forecasting engines: one short-term (days) and one
 			very short term (hourse).  The later system was later open-sourced.
-		\item Used Java 6, Swing, Oracle, Perst (embedded database), Git, CVS.
+		\item Used Java 6, Swing, C++, Oracle, Perst (embedded database), Git, CVS.
 	\end{itemize}
 }
 
-\cventry{Aug 2007 -- Dec 2007}{Teaching Assistant}{\textsc{University of Connecticut}}{Storrs, CT}{}{
+\cventry{Aug 2007 -- Dec 2007}{Teaching Assistant}{\textsc{University of Connecticut}}{}{}{
 	\begin{itemize}
 		\item Instructed weekly lab activity for a freshman-level computer programming course.
 		\item Tutored undergraduate students in areas related to computer science and mathematics.
@@ -169,21 +192,21 @@
 
 
 
-\newpage
-\section{Programming Tools \& Practices}
-
-\cvitem{Version Control:} {\textsc{Git, Subversion, CVS, Mercurial}}
-\cvitem{Programming Languages:}{\textsc{C/C++, C\#, Go, Java, Javascript, MATLAB, Python, Scala, SQL,} et cetera}
-\cvitem{Database Systems:} {\textsc{MS SQL Server, MySQL, Oracle, SQLite}}
-\cvitem{MVC Frameworks:}{\textsc{Spring, Play!, Pylons, Pyramid}}
-\cvitem{ORMs:}{\textsc{SQLAlchemy, Hibernate}}
-\cvitem{Build Tools:}{\textsc{Gradle, Ant, Make}}
-\cvitem{Web Technologies:}{\textsc{REST, AJAX, Websockets}}
-\cvitem{Javascript Frameworks:}{\textsc{JQuery, Backbone, AngularJS}}
-\cvitem{GUI Frameworks:}{\textsc{Android, Swing, GTK}}
-\cvitem{Engineering Practices:}{\textsc{Agile, SCRUM, Continuous Integration, Test-Driven Development}}
-
-{\em I am probably omitting something of interest.  Ask me about your favorite tool or practice.}
+%%\newpage
+%%\section{Programming Tools \& Practices}
+%%
+%%\cvitem{Version Control:} {\textsc{Git, Subversion, CVS, Mercurial}}
+%%\cvitem{Programming Languages:}{\textsc{C/C++, C\#, Go, Java, Javascript, MATLAB, Python, Scala, SQL,} et cetera}
+%%\cvitem{Database Systems:} {\textsc{MS SQL Server, MySQL, Oracle, SQLite}}
+%%\cvitem{MVC Frameworks:}{\textsc{Spring, Play!, Pylons, Pyramid}}
+%%\cvitem{ORMs:}{\textsc{SQLAlchemy, Hibernate}}
+%%\cvitem{Build Tools:}{\textsc{Gradle, Ant, Make}}
+%%\cvitem{Web Technologies:}{\textsc{REST, AJAX, Websockets}}
+%%\cvitem{Javascript Frameworks:}{\textsc{JQuery, Backbone, AngularJS}}
+%%\cvitem{GUI Frameworks:}{\textsc{Android, Swing, GTK}}
+%%\cvitem{Engineering Practices:}{\textsc{Agile, SCRUM, Continuous Integration, Test-Driven Development}}
+%%
+%%{\em I am probably omitting something of interest.  Ask me about your favorite tool or practice.}
 
 \begin{thebibliography}{1}
 
